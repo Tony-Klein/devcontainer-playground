@@ -15,3 +15,8 @@ devcontainer-playground = "devcontainer_playground:main"
 [build-system]
 requires = ["uv_build>=0.10.0,<0.11.0"]
 build-backend = "uv_build"
+
+# Exclude dev dependencies from default sync
+# Use 'uv sync --dev' to install development tools
+[tool.uv]
+default-groups = []

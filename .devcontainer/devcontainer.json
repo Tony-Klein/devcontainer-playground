@@ -4,6 +4,7 @@
     "dockerfile": "Dockerfile",
     "context": ".."
   },
+  "postCreateCommand": "uv sync --dev",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -43,10 +44,10 @@
         // UI Enhancements
         "christian-kohler.path-intellisense",
         "oderwat.indent-rainbow"
-      ],
-      "settings": {
-        // VS Code settings are available locally and will sync to Codespaces automatically if GitHub Settings Sync is enabled
-      }
+      ]
+      // VS Code settings are available locally and will sync to Codespaces automatically if GitHub Settings Sync is enabled
+      // "settings": {
+      // }
     }
   }
 }
